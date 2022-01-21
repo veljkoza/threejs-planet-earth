@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="flex flex-col-reverse lg:flex-row bg-black lg:h-screen">
+      <div
+        class="h-screen lg:w-1/2 p-5 sm:p-10 md:p-14 lg:p-20 flex flex-col items-center justify-center"
+      >
+        <div class="text-center lg:text-left">
+          <h1 class="text-white text-5xl"><code>PLANETA ZEMLJA.</code></h1>
+          <p class="text-white mt-4">
+            Svi ljudi žive ođe. <br />Mi smo samo krš koji lebdi kroz svemir.
+            <br />
+            Idemo brzinom 1,300,000 km/h. <br />Mi živimo u prosjeku 80
+            godina.<br />
+            Svemir postoji već 12,000,000,000 godina.<br />
+            Razmislite malo o tome kad se iznervirate.
+          </p>
+          <button class="bg-blue-400 px-7 py-4 mt-5 text-white font-semibold">
+            Saznaj više
+          </button>
+        </div>
+      </div>
+      <div class="h-screen w-full lg:w-1/2" id="canvas-container">
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
